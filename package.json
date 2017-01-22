@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "./node_modules/.bin/eslint app.js"
+    "start": "node app.js",
+    "test": "eslint app.js"
   },
   "dependencies": {
     "eslint": "^3.14.0",
@@ -11,5 +12,22 @@
     "eslint": "^3.14.0",
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0"
-  }
+  },
+  "engines": {
+    "node": "7.0.0"
+  },
+  "name": "fate-product-tweeter",
+  "description": "[![Build Status](https://travis-ci.org/amazingrando/fate-product-tweeter.svg?branch=master)](https://travis-ci.org/amazingrando/fate-product-tweeter)",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amazingrando/fate-product-tweeter.git"
+  },
+  "author": "Randy Oest (oest@amazingrando.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amazingrando/fate-product-tweeter/issues"
+  },
+  "homepage": "https://github.com/amazingrando/fate-product-tweeter#readme"
 }
