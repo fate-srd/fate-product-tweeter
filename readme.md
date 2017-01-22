@@ -19,6 +19,15 @@ The project is based on the advice of http://techknights.org/workshops/nodejs-tw
 - `cp config.js config.local.js` and enter your credentials into `config.local.js`.
 - You will also need to set the source for the json in `config.local.js`
 
-## How to User
+## How to Use
 
 - Run `node app.js`
+
+## Heroku Deployment
+
+Heroku needs `config.local.js` so when there are changes:
+
+1. Create `heroku` branch
+2. In `.gitignore` remove `config.local.js` and add changes to the branch
+3. `git push heroku heroku:master`
+4. Remove `heroku` branch.
