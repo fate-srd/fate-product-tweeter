@@ -1,7 +1,7 @@
 const TwitterPackage = require('twitter');
 const request = require('request');
 
-// eslint import/no-unresolved
+// eslint disable-next-line import/no-unresolved
 const config = require('./config.local.js');
 
 const preText = 'Check out:';
