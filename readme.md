@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/amazingrando/fate-product-tweeter.svg?branch=master)](https://travis-ci.org/amazingrando/fate-product-tweeter)
+
 # Fate SRD auto tweeter
 
 This project creates a script that will pull a random product from fate-srd.com and post about it to the @FateSRD twitter account.
