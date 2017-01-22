@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "./node_modules/.bin/eslint app.js"
+  },
+  "dependencies": {
+    "eslint": "^3.14.0",
+    "request": "^2.79.0",
+    "twitter": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
