@@ -1,8 +1,16 @@
 const TwitterPackage = require('twitter');
 const request = require('request');
 
-// eslint disable-next-line import/no-unresolved
-const config = require('./config.local.js');
+let config = {};
+
+try {
+  // eslint-disable-next-line global-require
+  config = require('./config.local.js');
+} catch (e) {
+  // eslint-disable-next-line global-require
+  config = require('./config.js');
+}
+console.log(config);
 
 const preText = 'Check out:';
 const twitterLinkLength = 24; // Twitter counts all URLs as 24 characters.
