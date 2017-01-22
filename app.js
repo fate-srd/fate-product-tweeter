@@ -28,7 +28,7 @@ const tweetPost = function tweetOutProduct(data) {
     productTitle = data.nodes[0].node.title;
   }
 
-  const tweet = `${preText} ${productTitle} ${productLink}'`;
+  const tweet = `${preText} ${productTitle} ${productLink}`;
 
   console.log(tweet);
 
