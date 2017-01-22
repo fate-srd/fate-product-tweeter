@@ -4,10 +4,8 @@ const request = require('request');
 let config = {};
 
 try {
-  // eslint-disable-next-line global-require
   config = require('./config.local.js');
 } catch (e) {
-  // eslint-disable-next-line global-require
   config = require('./config.js');
 }
 console.log(config);
