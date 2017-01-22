@@ -1,5 +1,7 @@
 const TwitterPackage = require('twitter');
 const request = require('request');
+
+// eslint import/no-unresolved: "off"
 const config = require('./config.local.js');
 
 const preText = 'Check out:';
