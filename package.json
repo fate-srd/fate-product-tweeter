@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "start": "node app.js",
     "test": "eslint app.js"
   },
   "dependencies": {
