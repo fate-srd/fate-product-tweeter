@@ -1,19 +1,13 @@
 const TwitterPackage = require('twitter');
 const request = require('request');
+const config = require('config');
 
-let config = {};
-
-try {
-  config = require('./config.local.js');
-} catch (e) {
-  config = require('./config.js');
-}
-console.log(config);
-
+const twitterConfig = config.get('twitter.credentials');
+const jsonEndPoint = config.get('source.jsonEndPoint');
 const preText = 'Check out:';
 const twitterLinkLength = 24; // Twitter counts all URLs as 24 characters.
 const maxTweetLength = 138 - twitterLinkLength.length - preText.length;
-const productToTweet = config.jsonEndPoint;
+const productToTweet = jsonEndPoint;
 
 /*
  * Tweet a Fate product.
@@ -35,7 +29,7 @@ const tweetPost = function tweetOutProduct(data) {
   /*
    * Post a status update to Twitter.
    */
-  const Twitter = new TwitterPackage(config);
+  const Twitter = new TwitterPackage(twitterConfig);
   Twitter.post('statuses/update', { status: tweet }, (error, tweetContent, response) => {
     if (error) {
       console.log(error);

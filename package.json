@@ -3,6 +3,7 @@
     "test": "eslint app.js"
   },
   "dependencies": {
+    "config": "^1.24.0",
     "eslint": "^3.14.0",
     "request": "^2.79.0",
     "twitter": "^1.7.0"
