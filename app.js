@@ -3,10 +3,10 @@ const request = require('request');
 const config = require('config');
 
 const twitterConfig = [
-  process.env.CONSUMER_KEY || config.get('twitter.credentials.consumer_key'),
-  process.env.CONSUMER_SECRET || config.get('twitter.credentials.consumer_secret'),
-  process.env.ACCESS_TOKEY_KEY || config.get('twitter.credentials.access_token_key'),
-  process.env.ACCESS_TOKEN_SECRET || config.get('twitter.credentials.access_token_secret'),
+  config.get('twitter.credentials.consumer_key'),
+  config.get('twitter.credentials.consumer_secret'),
+  config.get('twitter.credentials.access_token_key'),
+  config.get('twitter.credentials.access_token_secret'),
 ];
 const jsonEndPoint = config.get('source.jsonEndPoint');
 const preText = 'Check out:';
