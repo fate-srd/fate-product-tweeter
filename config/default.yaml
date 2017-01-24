@@ -5,4 +5,4 @@ twitter:
     access_token_key: 'YOUR_INFO'
     access_token_secret: 'YOUR_INFO'
 source:
-  jsonEndPoint: 'YOUR_INFO'
+  jsonEndPoint: 'https://fate-srd.com/json'
