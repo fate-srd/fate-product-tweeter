@@ -8,13 +8,11 @@ const twitterConfig = {
   access_token_key: process.env.ACCESS_TOKEN_KEY || config.get('twitter.credentials.access_token_key'),
   access_token_secret: process.env.ACCESS_TOKEN_SECRET || config.get('twitter.credentials.access_token_secret'),
 };
-console.log(twitterConfig);
-const jsonEndPoint = config.get('source.jsonEndPoint');
-console.log(jsonEndPoint);
+
+const productToTweet = config.get('source.jsonEndPoint');
 const preText = 'Check out:';
 const twitterLinkLength = 24; // Twitter counts all URLs as 24 characters.
 const maxTweetLength = 138 - twitterLinkLength.length - preText.length;
-const productToTweet = jsonEndPoint;
 
 /*
  * Tweet a Fate product.
@@ -31,18 +29,14 @@ const tweetPost = function tweetOutProduct(data) {
 
   const tweet = `${preText} ${productTitle} ${productLink}`;
 
-  console.log(tweet);
-
   /*
    * Post a status update to Twitter.
    */
   const Twitter = new TwitterPackage(twitterConfig);
-  Twitter.post('statuses/update', { status: tweet }, (error, tweetContent, response) => {
+  Twitter.post('statuses/update', { status: tweet }, (error) => {
     if (error) {
       console.log(error);
     }
-    console.log(tweetContent);  // Tweet content.
-    // console.log(response);  // Raw response object from Twitter.
   });
 };
 
