@@ -2,12 +2,12 @@ const TwitterPackage = require('twitter');
 const request = require('request');
 const config = require('config');
 
-const twitterConfig = [
-  process.env.CONSUMER_KEY || config.get('twitter.credentials.consumer_key'),
-  process.env.CONSUMER_SECRET || config.get('twitter.credentials.consumer_secret'),
-  process.env.ACCESS_TOKEN_KEY || config.get('twitter.credentials.access_token_key'),
-  process.env.ACCESS_TOKEN_SECRET || config.get('twitter.credentials.access_token_secret'),
-];
+const twitterConfig = {
+  consumer_key: process.env.CONSUMER_KEY || config.get('twitter.credentials.consumer_key'),
+  consumer_secret: process.env.CONSUMER_SECRET || config.get('twitter.credentials.consumer_secret'),
+  access_token_key: process.env.ACCESS_TOKEN_KEY || config.get('twitter.credentials.access_token_key'),
+  access_token_secret: process.env.ACCESS_TOKEN_SECRET || config.get('twitter.credentials.access_token_secret'),
+};
 console.log(twitterConfig);
 const jsonEndPoint = config.get('source.jsonEndPoint');
 console.log(jsonEndPoint);
