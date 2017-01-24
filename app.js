@@ -8,6 +8,7 @@ const twitterConfig = [
   config.get('twitter.credentials.access_token_key'),
   config.get('twitter.credentials.access_token_secret'),
 ];
+console.log(twitterConfig);
 const jsonEndPoint = config.get('source.jsonEndPoint');
 const preText = 'Check out:';
 const twitterLinkLength = 24; // Twitter counts all URLs as 24 characters.
@@ -40,7 +41,7 @@ const tweetPost = function tweetOutProduct(data) {
       console.log(error);
     }
     console.log(tweetContent);  // Tweet content.
-    console.log(response);  // Raw response object from Twitter.
+    // console.log(response);  // Raw response object from Twitter.
   });
 };
 
