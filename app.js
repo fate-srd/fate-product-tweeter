@@ -9,6 +9,7 @@ const twitterConfig = [
   config.get('twitter.credentials.access_token_secret'),
 ];
 console.log(twitterConfig);
+console.log(process.env.CONSUMER_KEY);
 const jsonEndPoint = config.get('source.jsonEndPoint');
 const preText = 'Check out:';
 const twitterLinkLength = 24; // Twitter counts all URLs as 24 characters.
