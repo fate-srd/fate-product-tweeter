@@ -3,7 +3,7 @@ const request = require('request');
 const config = require('config');
 
 const twitterConfig = [
-  config.get('twitter.credentials.consumer_key'),
+  process.env.CONSUMER_KEY || config.get('twitter.credentials.consumer_key'),
   config.get('twitter.credentials.consumer_secret'),
   config.get('twitter.credentials.access_token_key'),
   config.get('twitter.credentials.access_token_secret'),
