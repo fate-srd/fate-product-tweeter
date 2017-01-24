@@ -8,7 +8,9 @@ const twitterConfig = [
   process.env.ACCESS_TOKEN_KEY || config.get('twitter.credentials.access_token_key'),
   process.env.ACCESS_TOKEN_SECRET || config.get('twitter.credentials.access_token_secret'),
 ];
+console.log(twitterConfig);
 const jsonEndPoint = config.get('source.jsonEndPoint');
+console.log(jsonEndPoint);
 const preText = 'Check out:';
 const twitterLinkLength = 24; // Twitter counts all URLs as 24 characters.
 const maxTweetLength = 138 - twitterLinkLength.length - preText.length;
