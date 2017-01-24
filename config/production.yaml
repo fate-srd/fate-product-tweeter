@@ -1,8 +1,8 @@
 twitter:
   credentials:
-    consumer_key: ENV['CONSUMER_KEY']
-    consumer_secret: ENV['CONSUMER_SECRET']
-    access_token_key: ENV['ACCESS_TOKEN_KEY']
-    access_token_secret: ENV['ACCESS_TOKEN_SECRET']
+    consumer_key: process.env.CONSUMER_KEY
+    consumer_secret: process.env.CONSUMER_SECRET
+    access_token_key: process.env.ACCESS_TOKEN_KEY
+    access_token_secret: process.env.ACCESS_TOKEN_SECRET
 source:
   jsonEndPoint: 'https://fate-srd.com/json'
