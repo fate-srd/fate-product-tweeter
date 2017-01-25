@@ -16,8 +16,8 @@ The project is based on the advice of http://techknights.org/workshops/nodejs-tw
 - `git clone` this repo and `cd` into it.
 - `yarn` to install packages
 - Create a [Twitter app](https://apps.twitter.com/), including Access Tokens.
-- `cp config.js config.local.js` and enter your credentials into `config.local.js`.
-- You will also need to set the source for the json in `config.local.js`
+- Add your tokens in Heroku. If you'd like to test locally, enter them into `config/default.yml`.
+- You will also need to set the source for the json in either `config/default.yml` or `config/production.yml`, depending on your environment.
 
 ## How to Use
 
@@ -25,9 +25,4 @@ The project is based on the advice of http://techknights.org/workshops/nodejs-tw
 
 ## Heroku Deployment
 
-Heroku needs `config.local.js` so when there are changes:
-
-1. Create `heroku` branch
-2. In `.gitignore` remove `config.local.js` and add changes to the branch
-3. `git push heroku heroku:master`
-4. Remove `heroku` branch.
+Deploy to Heroku's master branch.
