@@ -6,3 +6,4 @@ twitter:
     access_token_secret: 'YOUR_INFO'
 source:
   jsonEndPoint: 'https://fate-srd.com/json'
+log: 'tweets.log'

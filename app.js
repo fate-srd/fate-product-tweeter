@@ -3,7 +3,7 @@ const fs = require('fs');
 const request = require('request');
 const TwitterPackage = require('twitter');
 
-const fileName = 'tweets.log';
+const fileName = config.get('log');
 const twitterConfig = {
   consumer_key: process.env.CONSUMER_KEY || config.get('twitter.credentials.consumer_key'),
   consumer_secret: process.env.CONSUMER_SECRET || config.get('twitter.credentials.consumer_secret'),
