@@ -18,7 +18,7 @@
   },
   "name": "fate-product-tweeter",
   "description": "[![Build Status](https://travis-ci.org/amazingrando/fate-product-tweeter.svg?branch=master)](https://travis-ci.org/amazingrando/fate-product-tweeter)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "app.js",
   "repository": {
     "type": "git",
