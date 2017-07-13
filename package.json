@@ -14,7 +14,7 @@
     "eslint-plugin-import": "^2.2.0"
   },
   "engines": {
-    "node": "7.0.0"
+    "node": "7.10.1"
   },
   "name": "fate-product-tweeter",
   "description": "[![Build Status](https://travis-ci.org/amazingrando/fate-product-tweeter.svg?branch=master)](https://travis-ci.org/amazingrando/fate-product-tweeter)",
