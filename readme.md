@@ -8,8 +8,8 @@ The project is based on the advice of http://techknights.org/workshops/nodejs-tw
 
 ## Requirements
 
-- NodeJS (tested with 7+)
-- Yarn for package management
+- Node
+- Yarn
 
 ## Installation
 
@@ -21,7 +21,7 @@ The project is based on the advice of http://techknights.org/workshops/nodejs-tw
 
 ## How to Use
 
-- Run `node app.js`
+- Run `yarn tweet`
 
 ## Heroku Deployment
 
