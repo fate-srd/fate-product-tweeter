@@ -1,20 +1,21 @@
 {
   "scripts": {
+    "tweet": "node app.js",
     "test": "eslint app.js"
   },
   "dependencies": {
-    "config": "^1.24.0",
-    "eslint": "^3.14.0",
-    "request": "^2.79.0",
-    "twitter": "^1.7.0"
+    "config": "^3.3.3",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "twitter": "^1.7.1",
+    "twitter-lite": "^0.14.0"
   },
-  "devDependencies": {
-    "eslint": "^3.14.0",
-    "eslint-config-airbnb-base": "^11.0.1",
-    "eslint-plugin-import": "^2.2.0"
-  },
+  "devDependencies": {},
   "engines": {
-    "node": "7.10.1"
+    "node": "12"
   },
   "name": "fate-product-tweeter",
   "description": "[![Build Status](https://travis-ci.org/amazingrando/fate-product-tweeter.svg?branch=master)](https://travis-ci.org/amazingrando/fate-product-tweeter)",
