@@ -16,14 +16,10 @@ const constructTweet = (title, url) => `${preface} "${title}" at ${url}`;
 const getRandomProduct = () => fetch(productList) // eslint-disable-this-line no-undef
   .then((response) => response.json())
   .then((data) => {
-    const randomProperty = (obj) => {
-      const keys = Object.keys(obj);
-      // eslint-disable-next-line no-bitwise
-      return obj[keys[keys.length * Math.random() << 0]];
-    };
-    const productToTweet = randomProperty(data.data);
-    const { title } = productToTweet.attributes;
-    const url = productToTweet.attributes.field_link.uri;
+    const products = Array.from(data.data);
+    const item = products[Math.floor(Math.random() * products.length)];
+    const { title } = item.attributes;
+    const url = item.attributes.field_link.uri;
     const tweet = constructTweet(title, url);
 
     client.post('statuses/update', { status: tweet }, (error, content, response) => {

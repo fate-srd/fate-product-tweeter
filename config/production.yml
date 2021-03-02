@@ -1,2 +1,2 @@
 source:
-  jsonEndPoint: "http://backend.fate-srd.com/api"
+  jsonEndPoint: "https://backend.fate-srd.com/api/node/fate_books"
